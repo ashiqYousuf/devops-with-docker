@@ -14,4 +14,5 @@ ls
 cat Dockerfile [You can see the node index.js file is executed when we run the container]
 cat index.js [Looking a bit at the logic, you can see password:- basics can led us to victory]
 
-Ans:- basics
+password:- basics
+secret-message:- This is the secret message
