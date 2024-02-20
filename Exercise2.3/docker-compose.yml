@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  example-frontend:
+    build: ./example-frontend
+    environment:
+      - REACT_APP_BACKEND_URL=http://backend-server:8080
+    ports:
+      - 3000:3000
+  
+  example-backend:
+    build: ./example-backend
+    ports:
+      - 8080:8080
+    container_name: backend-server
