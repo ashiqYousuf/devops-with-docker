@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  simple-web-service:
+    image: devopsdockeruh/simple-web-service:ubuntu
+    ports:
+      - 8080:8080
+    # command: ["bash", "-p", "8080", "server"]
+    command: ["server"]
