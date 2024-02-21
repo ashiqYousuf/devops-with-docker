@@ -17,6 +17,8 @@ RUN go mod download && go mod verify
 
 COPY . .
 
+ENV REQUEST_ORIGIN=http://frontend-server:3000
+
 RUN go build -o server
 
 RUN test ./...
